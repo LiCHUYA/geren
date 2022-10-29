@@ -1,0 +1,112 @@
+/*最大的盒子*/
+body {
+
+  width: 2000px;
+  height: 1000px;
+  background: #f2f4f7;
+}
+
+/*首页*/
+.login {
+  position: relative;
+  top: 218px;
+  left: 515px;
+  width: 600px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+/*页面阴影*/
+.login:hover {
+  box-shadow: 0 16px 16px rgba(10, 16, 20, 0.24), 0 0 16px rgba(10, 16, 20, 0.25);
+}
+
+form h3 {
+  position: relative;
+  top: 30px;
+  left: 60px;
+}
+
+form div input {
+  /*相对于自身原来的位置*/
+  position: relative;
+  top: 40px;
+  left: 70px;
+  margin-bottom: 16px;
+  outline-style: none;
+  border: 1px solid #ccc;
+  border-radius: 80px;
+  padding: 13px 14px;
+  width: 300px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Microsoft soft";
+}
+form div span{
+  position: absolute;
+  left:400px;
+
+}
+/*form div {*/
+/*  position: relative;*/
+/*  top: 100px;*/
+/*}*/
+
+button {
+  position: absolute;
+  top: 280px;
+  left: 70px;
+  background: aqua;
+  width: 330px;
+  height: 40px;
+  border-radius: 80px;
+  color: white;
+  background: linear-gradient(-90deg, #29bdd9 0%, #6067FF 100%);
+
+}
+
+button:hover {
+  background: linear-gradient(-90deg, #83e2ec 0%, #a7c5ff 100%);
+
+}
+
+/*其他的业务方面*/
+.extends {
+  position: relative;
+}
+
+.extends a {
+  text-decoration: none;
+  color: #3A8BFF;
+}
+
+.extends a:nth-child(1) {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+.extends a:nth-child(2) {
+  position: absolute;
+  left: 250px;
+  top: 40px;
+}
+
+.extends a:nth-child(3) {
+  position: absolute;
+  top: 70px;
+  left: 180px;
+  color: #91A0B5;
+}
+
+.other {
+  position: relative;
+  top: 70px;
+  left: 100px;
+}
+
+.other a:first-child {
+  position: absolute;
+  left: 160px;
+}

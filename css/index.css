@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #DEE1E7;
+}
+
+ul {
+    list-style: none;
+}
+
+.All {
+    position               : relative;
+    display                : flex;
+    margin                 : 20px auto;
+    width                  : 1400px;
+    height                 : 960px;
+    border-top-right-radius: 30px;
+}
+
+.aside {
+    width              : 1100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    z-index: 99;
+}
+
+.aside-left {
+    position                 : relative;
+    float                    : left;
+    width                    : 230px;
+    height                   : 960px;
+    background-color         : #FFFFFF;
+    /* border-right          : 4px solid black; */
+    border-bottom-left-radius: 30px;
+    border-top-left-radius   : 30px;
+    border-right             : 3px solid #F0EFF4;
+
+}
+
+.aside-left h3 {
+    display    : block;
+    height     : 105px;
+    text-align : center;
+    line-height: 105px;
+}
+
+.aside-left .radiu {
+    position     : absolute;
+    top          : 120px;
+    left         : 75px;
+    width        : 75px;
+    height       : 75px;
+    border-radius: 50%;
+}
+
+.touxiang {
+    height          : 150px;
+    background-color: #FFFFFF;
+}
+
+.touxiang img {
+    position: absolute;
+    /* width: 50%;
+ height     : 50%; */
+    width   : 75px;
+    height  : 75px;
+    left    : 75px;
+}
+
+.touxiang h4 {
+    position: absolute;
+    top     : 190px;
+    left    : 75px;
+
+}
+
+.touxiang h5 {
+    position: absolute;
+    top     : 210px;
+    left    : 60px;
+}
+
+.wenzi {
+    float: left;
+}
+
+.tool-first {
+    height          : 285px;
+    background-color: #FFFFFF;
+}
+
+.tool-first h4 {
+
+    line-height: 75px;
+}
+
+.tool-first h4,
+li {
+    padding-left  : 50px;
+    padding-bottom: 20px;
+}
+
+.tool-first a:hover {
+    color: #AA90B0;
+}
+
+.lasta {
+    position     : absolute;
+    left         : 50px;
+    width        : 70px;
+    border-bottom: 2px solid #D7D7D7;
+}
+.flowers img{
+    position: relative;
+    width: 220%;
+    height: 220%;
+    top:-190px;
+    left: -120px;
+    opacity: 0.2;
+    overflow: hidden;
+}
+/* --------------------------------------------------- */
+
+
+/* 中间盒子 */
+
+.aside-right {
+    
+
+    width           : 800px;
+    height          : 960px;
+    /* border-right : 4px solid black; */
+    border-radius   : 30px;
+    background-color: #FFFFFF;
+}
+
+.right-header h3 {
+    position: absolute;
+    top     : 30px;
+    left    : 250px;
+}
+
+.right-header span {
+    position: absolute;
+    top     : 60px;
+    left    : 250px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    z-index         : 1;
+    position        : absolute;
+    top             : 30px;
+    left            : 500px;
+    padding-left    : 20px;
+    width           : 170px;
+    height          : 30px;
+    background-color: #F2F5FF;
+    border-radius   : 10px;
+    ;
+
+}
+
+.search img {
+    z-index : 2;
+    position: absolute;
+    width   : 20px;
+    height  : 20px;
+    top     : 38px;
+    left    : 505px;
+}
+
+/* 头部 */
+
+.right-header {
+    height       : 105px;
+    border-radius: 30px;
+}
+
+
+/* 可视化 */
+
+.right-echarts {
+    position        : relative;
+    display         : flex;
+    flex            : 2;
+    height          : 290px;
+    background-color: #FFFFFF;
+
+    /* border-bottom: 4px solid black; */
+}
+
+.right-echarts .echarts-one {
+    position           : absolute;
+    top                : 40px;
+    margin-left        : 20px;
+    /* left            : 400px; */
+    width              : 200px;
+    height             : 200px;
+    background         : linear-gradient(-90deg, #29bdd9 0%, #6067FF 100%);
+    border-radius      : 15px;
+    ;
+}
+
+.right-echarts .echarts-two {
+    position     : absolute;
+    top          : 40px;
+    left         : -110px;
+    width        : 350px;
+    margin-left  : 350px;
+    height       : 200px;
+    border-radius: 15px;
+}
+
+/* tab栏大盒子 */
+
+.tab {
+    width : 800px;
+    height: 555px;
+}
+
+.tab-row {
+    height: 55px;
+
+    /* border-bottom: 4px solid red; */
+}
+
+.tab-row li {
+    position     : relative;
+    float        : left;
+    width        : 70px;
+    height       : 25px;
+    line-height  : 55px;
+    padding-right: 10px;
+    cursor       : pointer;
+}
+
+.tab-row .tab-item.active {
+    border-bottom: 4px solid orange;
+}
+
+
+
+/* 给内容盒子设置宽高 */
+
+.proall {
+    width : 800px;
+    height: 500px;
+}
+
+.proall .main {
+    float  : left;
+    display: none;
+}
+
+.proall .main.active {
+    display: block;
+}
+
+.proall .main h6 {
+    color  : #CDCDCD;
+    padding: 10px 0 20px 30px;
+}
+
+.main.active span {
+    display : inline-block;
+    position: absolute;
+
+    font-size: 70px;
+    color    : #29bdd9;
+
+}
+
+.proall .main ul {
+    margin-left  : 30px;
+    margin-bottom: 20px;
+}
+
+.proall .main ul li {
+    margin-left: 20px;
+}
+
+/* 最右边盒子 */
+
+.other {
+    z-index: 1;
+    position                  : absolute;
+    left                      : 780px;
+    width                     : 360px;
+    height                    : 960px;
+    border-bottom-right-radius: 30px;
+    background-color          : #FAF4F0;
+}
+
+.xiaotubiao {
+    height                 : 105px;
+    background-color       : #FAF4F0;
+    border-top-right-radius: 30px;
+}
+
+.xiaotubiao ul li{
+    float: right;
+}
+
+.xiaotubiao ul li span {
+    display  : inline-block;
+    font-size: 60px;
+    margin   : 10px -50px 0 0;
+    color    : #29bdd9;
+    position: relative;
+    left: -60px;
+}
+
+.zhuangtai {
+    position: relative;
+    margin  : 20px 0 10px 20px;
+    height  : 120px;
+}
+
+.zhuangtai .length {
+    position        : absolute;
+    left: 30px;
+    margin-top      : 20px;
+    width           : 270px;
+    height          : 60px;
+    background-color: #29bdd9;
+    border-radius   : 20px;
+}
+
+.tag {
+    display         : flex;
+    height          : 300px;
+    background-color: #FAF4F0;
+    position: absolute;
+    left: 15px;
+}
+
+.tag-left {
+    margin-left: 30px;
+    margin-top: 20px;
+    height          : 260px;
+    width           : 130px;
+    background-color: #FFDCD1;
+    border-radius: 15px;
+}
+
+.tag-right1 {
+     margin-left: 30px;
+ margin-top : 20px;
+    height          : 120px;
+    width           : 130px;
+    background-color: #FBE2FF;
+    border-radius: 15px;
+}
+
+.tag-right2 {
+     margin-left: 30px;
+ margin-top : 20px;
+    height          : 120px;
+    width           : 130px;
+    background-color: #DBFFF7;
+    border-radius: 15px;
+}
+
+.rili {
+    height: 410px;
+
+    border-bottom-right-radius: 30px;
+}
+
+/* 日历 */
+.calendar {
+    position: absolute;
+    top: 590px;
+    left: 35px;
+    width        : 300px;
+    height       : 360px;
+    background   : #fff;
+    box-shadow   : 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.body-list ul {
+    width      : 100%;
+    font-family: arial;
+    font-weight: bold;
+    font-size  : 14px;
+}
+
+.body-list ul li {
+    width          : 14.28%;
+    height         : 36px;
+    line-height    : 36px;
+    list-style-type: none;
+    display        : block;
+    box-sizing     : border-box;
+    float          : left;
+    text-align     : center;
+}
+
+.lightgrey {
+    color: #a8a8a8;
+    /*浅灰色*/
+}
+
+.darkgrey {
+    color: #565656;
+    /*深灰色*/
+}
+
+.green {
+    color: #6ac13c;
+    /*绿色*/
+}
+
+
+
+#calendar-title,
+#calendar-year {
+    padding-left: 10px;
+}
+
+/* 星期栏 */
+.lightgrey.body-list {
+    position: relative;
+    left    : -40px;
+}
+
+/* 具体天数 */
+.darkgrey.body-list {
+    position: relative;
+    left    : -30px;
+}
+
+.calendar .title a {
+    padding-left: 70px;
+}
