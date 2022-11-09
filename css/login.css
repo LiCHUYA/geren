@@ -7,7 +7,7 @@ body {
 }
 
 /*首页*/
-.login {
+.login, .zhuce {
   position: relative;
   top: 218px;
   left: 515px;
@@ -21,7 +21,13 @@ body {
 .login:hover {
   box-shadow: 0 16px 16px rgba(10, 16, 20, 0.24), 0 0 16px rgba(10, 16, 20, 0.25);
 }
-
+.zhuce:hover {
+  box-shadow: 0 16px 16px rgba(10, 16, 20, 0.24), 0 0 16px rgba(10, 16, 20, 0.25);
+}
+form{
+  width:600px;
+  height:400px
+}
 form h3 {
   position: relative;
   top: 30px;
@@ -55,7 +61,7 @@ form div span{
 
 button {
   position: absolute;
-  top: 280px;
+  top: 320px;
   left: 70px;
   background: aqua;
   width: 330px;
@@ -92,21 +98,19 @@ button:hover {
   left: 250px;
   top: 40px;
 }
-
 .extends a:nth-child(3) {
   position: absolute;
   top: 70px;
-  left: 180px;
+  left: 100px;
   color: #91A0B5;
 }
-
-.other {
-  position: relative;
+.a4,.a4-1 {
+  position:absolute;
   top: 70px;
-  left: 100px;
+  left: 280px;
+  color: #91A0B5;
+}
+.zhuce{
+  display: none;
 }
 
-.other a:first-child {
-  position: absolute;
-  left: 160px;
-}

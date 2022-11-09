@@ -59,7 +59,9 @@ ul {
     height       : 75px;
     border-radius: 50%;
 }
-
+.aside-left  h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 .touxiang {
     height          : 150px;
     background-color: #FFFFFF;
@@ -275,9 +277,8 @@ li {
 .main.active span {
     display : inline-block;
     position: absolute;
-
     font-size: 70px;
-    color    : #29bdd9;
+    color    : #FFDCD1;
 
 }
 
@@ -289,7 +290,11 @@ li {
 .proall .main ul li {
     margin-left: 20px;
 }
-
+.main.active ul li{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
 /* 最右边盒子 */
 
 .other {
@@ -299,6 +304,7 @@ li {
     width                     : 360px;
     height                    : 960px;
     border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
     background-color          : #FAF4F0;
 }
 
@@ -314,11 +320,12 @@ li {
 
 .xiaotubiao ul li span {
     display  : inline-block;
-    font-size: 60px;
-    margin   : 10px -50px 0 0;
-    color    : #29bdd9;
+    font-size: 40px;
+    margin   : 30px -50px 0 0;
     position: relative;
     left: -60px;
+
+
 }
 
 .zhuangtai {
@@ -326,7 +333,13 @@ li {
     margin  : 20px 0 10px 20px;
     height  : 120px;
 }
-
+.zhuangtai h4{
+    padding-left: 35px;
+}
+.zhuangtai h4 span a {
+    padding-left:  25px;
+    color: #29bdd9;
+}
 .zhuangtai .length {
     position        : absolute;
     left: 30px;
@@ -350,7 +363,7 @@ li {
     margin-top: 20px;
     height          : 260px;
     width           : 130px;
-    background-color: #FFDCD1;
+    background-color: #FFEBF6 ;
     border-radius: 15px;
 }
 
@@ -359,7 +372,7 @@ li {
  margin-top : 20px;
     height          : 120px;
     width           : 130px;
-    background-color: #FBE2FF;
+    background-color: #FFDCD1;
     border-radius: 15px;
 }
 
@@ -381,8 +394,8 @@ li {
 /* 日历 */
 .calendar {
     position: absolute;
-    top: 590px;
-    left: 35px;
+    top: 560px;
+    left: 40px;
     width        : 300px;
     height       : 360px;
     background   : #fff;
